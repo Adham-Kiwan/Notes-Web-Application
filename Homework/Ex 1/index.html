@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="log-in-section">
+        <section class="log-in">
+            <input type="text" id="name" placeholder="Enter your name">
+            <p class="invalid-username">Username invalid!</p>
+            <button onclick="login()">Log In</button>
+        </section>
+    </div>
+    <div class="display">
+        <section class="all">
+            <div class="left">
+                <div class="note">
+                    <div class="logo"><i class="fa-solid fa-user"></i></div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <div class="right">
+                <form class="note-form">
+                    <div>
+                        <label for="note-text" class="note-label">Enter note text</label>
+                        <textarea id="note-text" class="note-textarea" placeholder="Enter note text"></textarea>
+                        <p class="invalid-text">Text invalid!</p>
+                    </div>
+        
+                    <div class="priority-section">
+                        <span class="priority-label">Priority</span>
+                        <div class="radio-group">
+                            <label><input type="radio" name="priority" value="very-low"> Very Low</label>
+                            <label><input type="radio" name="priority" value="low"> Low</label>
+                            <label><input type="radio" name="priority" value="medium"> Medium</label>
+                            <label><input type="radio" name="priority" value="high"> High</label>
+                            <label><input type="radio" name="priority" value="very-high"> Very High</label>
+                        </div>
+                        <p class="invalid-choice">Choice invalid!</p>
+                    </div>
+        
+                    <div class="dropdown">
+                        <label for="category" class="dropdown-label">Category</label>
+                        <select id="category" class="dropdown-select">
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="category1">Category 1</option>
+                            <option value="category2">Category 2</option>
+                            <option value="category3">Category 3</option>
+                        </select>
+                        <p class="invalid-category">Category invalid!</p>
+                    </div>
+        
+                    <button type="button" onclick="createNote()" class="create-btn">Create Note</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
