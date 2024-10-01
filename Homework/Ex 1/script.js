@@ -75,10 +75,18 @@ function login() {
     if (nameInput === nameInput.toLowerCase() && nameInput !== "") {
         document.querySelector(".log-in-section").style.display = "none";
         document.querySelector(".display").style.display = "flex";
+        document.querySelector(".logout-icon").style.display = "block";  // Ensure the X icon is visible when logged in
         displayNotes(nameInput);  // Load and display the user's notes
     } else {
         document.querySelector(".invalid-username").style.display = "flex";
     }
+}
+
+function logout() {
+    document.querySelector('.log-in-section').style.display = 'flex';
+    document.querySelector('.display').style.display = 'none';
+    document.querySelector('.logout-icon').style.display = 'none';
+    document.getElementById("name").value = '';
 }
 
 
@@ -141,6 +149,3 @@ function checkNote() {
     }
   }
 }
-
-
-
