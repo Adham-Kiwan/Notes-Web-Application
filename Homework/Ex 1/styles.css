@@ -10,7 +10,7 @@ body {
 }
 .log-in-section {
     display: none;
-    /* display: flex; */
+    display: flex; 
     align-items: center;
     height: 100vh;
 }
@@ -53,7 +53,7 @@ body {
     font-size: 15px;
 }
 .display {
-
+    display: none;
 }
 .all {
     display: flex;

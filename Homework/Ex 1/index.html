@@ -17,12 +17,8 @@
     </div>
     <div class="display">
         <section class="all">
-            <div class="left">
-                <div class="note">
-                    <div class="logo"><i class="fa-solid fa-user"></i></div>
-                    <div>Lorem ipsum dolor sit amet.</div>
-                    <div class="icon"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+            <div id="notes-container" class="left">
+
             </div>
             <div class="right">
                 <form class="note-form">
@@ -55,7 +51,7 @@
                         <p class="invalid-category">Category invalid!</p>
                     </div>
         
-                    <button type="button" onclick="createNote()" class="create-btn">Create Note</button>
+                    <button type="button" onclick="createNoteForUser(document.getElementById('name').value)" class="create-btn">Create Note</button>
                 </form>
             </div>
         </section>
